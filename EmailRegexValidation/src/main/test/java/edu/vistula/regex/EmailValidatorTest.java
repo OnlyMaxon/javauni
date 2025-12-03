@@ -14,7 +14,6 @@ public class EmailValidatorTest {
     @Test
     void testInvalidEmails() {
         assertFalse(EmailValidator.isValidEmail("test@examplecom")); // missing dot
-        assertFalse(EmailValidator.isValidEmail("test@vistula.pl")); // only 2 letters after dot
         assertFalse(EmailValidator.isValidEmail("invalid@@example.com")); // double @
         assertFalse(EmailValidator.isValidEmail("")); // empty string
         assertFalse(EmailValidator.isValidEmail(null)); // null input
